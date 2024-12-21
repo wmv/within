@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inner Nature</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        /* Custom Colors - Extend Tailwind */
+        .bg-navy-800 {
+            background-color: #1e293b;
+        }
+
+        .text-gold-500 {
+            color: #d4af37;
+        }
+
+        .bg-gold-500 {
+            background-color: #d4af37;
+        }
+
+        .bg-gold-600:hover {
+            background-color: #c59531;
+        }
+
+        /* Smooth Hover Transition */
+        .transition-all {
+            transition: all 0.3s ease-in-out;
+        }
+
+        /* Hide scrollbar for smooth navigation (optional) */
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+
+        .no-scrollbar {
+            scrollbar-width: none;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-900 text-white scroll-smooth no-scrollbar">
+
+    <!-- Header -->
+    <header class="relative flex justify-center items-center bg-navy-800 h-screen text-center">
+        <div>
+            <img src="logo.png" alt="Inner Nature Personality Logo" class="mx-auto h-32 sm:h-40">
+            <h1 class="text-4xl sm:text-5xl font-bold mt-4 text-gold-500">Discover Your Personality</h1>
+            <p class="mt-4 text-base sm:text-lg max-w-2xl mx-auto px-4">
+                Uncover your strengths, compatibility, and untapped potential with our personalized personality
+                assessments.
+            </p>
+            <a href="#get-started"
+                class="mt-6 inline-block bg-gold-500 hover:bg-gold-600 text-white px-6 py-3 text-xl font-bold rounded-full tracking-wide transition">
+                Take the Test
+            </a>
+        </div>
+    </header>
+    <!-- Navigation -->
+    <nav class="sticky top-0 bg-navy-800 shadow-md z-50">
+        <div class="max-w-7xl mx-auto flex flex-row justify-between items-center p-4">
+            <!-- Menu (Hidden on small screens) -->
+            <ul class="hidden md:flex space-x-8">
+                <li><a href="#about" class="text-white hover:text-gold-500 font-medium">About</a></li>
+                <li><a href="#services" class="text-white hover:text-gold-500 font-medium">Services</a></li>
+                <li><a href="#reviews" class="text-white hover:text-gold-500 font-medium">Reviews</a></li>
+                <li><a href="#contact" class="text-white hover:text-gold-500 font-medium">Contact</a></li>
+            </ul>
+
+            <!-- Request Consultation Button (Centered in responsive mode) -->
+            <a href="#consultation"
+                class="mx-auto md:mx-0 bg-gold-500 hover:bg-gold-600 text-white px-5 py-2 text-sm sm:text-base font-medium rounded-full transition text-center">
+                Request Consultation
+            </a>
+        </div>
+    </nav>
+
+
+    <!-- Main Section -->
+    <main class="max-w-7xl mx-auto p-6 space-y-16">
+
+        <!-- About Section -->
+        <section id="about" class="text-center">
+            <h2 class="text-3xl sm:text-4xl text-gold-500 font-bold">About Us</h2>
+            <p class="text-base sm:text-lg mt-4 max-w-3xl mx-auto">
+                Our mission is to help individuals better understand themselves through advanced personality profiling,
+                providing
+                insights into careers, relationships, and personal growth.
+            </p>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services">
+            <h2 class="text-3xl sm:text-4xl text-gold-500 font-bold text-center mb-8">Our Services</h2>
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8 text-center">
+                <!-- Service 1 -->
+                <div class="bg-navy-800 p-6 rounded shadow-lg transition hover:scale-105">
+                    <h3 class="text-xl sm:text-2xl mb-3 font-bold text-gold-500">Personality Assessment</h3>
+                    <p class="text-gray-400">Detailed, personalized insights into who you are.</p>
+                </div>
+                <!-- Service 2 -->
+                <div class="bg-navy-800 p-6 rounded shadow-lg transition hover:scale-105">
+                    <h3 class="text-xl sm:text-2xl mb-3 font-bold text-gold-500">Career Guidance</h3>
+                    <p class="text-gray-400">Match your personality with your ideal career path.</p>
+                </div>
+                <!-- Service 3 -->
+                <div class="bg-navy-800 p-6 rounded shadow-lg transition hover:scale-105">
+                    <h3 class="text-xl sm:text-2xl mb-3 font-bold text-gold-500">Relationship Compatibility</h3>
+                    <p class="text-gray-400">Strong connections begin with mutual understanding.</p>
+                </div>
+                <!-- Service 4 -->
+                <div class="bg-navy-800 p-6 rounded shadow-lg transition hover:scale-105">
+                    <h3 class="text-xl sm:text-2xl mb-3 font-bold text-gold-500">Personal Development Plans</h3>
+                    <p class="text-gray-400">Grow with customized action plans aligned with your goals.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="blog" class="max-w-7xl mx-auto p-6 space-y-16">
+            <h2 class="text-3xl sm:text-4xl text-gold-500 font-bold text-center">From Our Blog</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Blog Post 1 -->
+                <article class="bg-navy-800 p-6 rounded shadow-lg transition hover:scale-105">
+                    <h3 class="text-xl sm:text-2xl mb-3 font-bold text-gold-500">Understanding Your Inner Self</h3>
+                    <p class="text-gray-400">Dive into the depths of your personality with our latest insights...</p>
+                    <a href="#" class="mt-4 inline-block text-gold-500 hover:text-gold-600">Read More</a>
+                </article>
+                <!-- Blog Post 2 -->
+                <article class="bg-navy-800 p-6 rounded shadow-lg transition hover:scale-105">
+                    <h3 class="text-xl sm:text-2xl mb-3 font-bold text-gold-500">Personality and Career Success</h3>
+                    <p class="text-gray-400">How understanding your personality can lead to better career choices...</p>
+                    <a href="#" class="mt-4 inline-block text-gold-500 hover:text-gold-600">Read More</a>
+                </article>
+                <!-- Blog Post 3 -->
+                <article class="bg-navy-800 p-6 rounded shadow-lg transition hover:scale-105">
+                    <h3 class="text-xl sm:text-2xl mb-3 font-bold text-gold-500">The Science Behind Personality Types</h3>
+                    <p class="text-gray-400">Explore the psychological research that underpins personality typing...</p>
+                    <a href="#" class="mt-4 inline-block text-gold-500 hover:text-gold-600">Read More</a>
+                </article>
+            </div>
+        </section>
+    
+        <!-- Booking Form Section -->
+        <section id="consultation" class="text-center p-12 bg-gold-500 text-white">
+            <h2 class="text-3xl sm:text-4xl font-bold mb-8">Book a Personalized Consultation</h2>
+            <form class="max-w-lg mx-auto">
+                <input type="text" placeholder="Full Name" class="w-full p-3 mb-4 rounded text-gray-900">
+                <input type="email" placeholder="Email" class="w-full p-3 mb-4 rounded text-gray-900">
+                <textarea placeholder="Your Message" rows="4" class="w-full p-3 mb-4 rounded text-gray-900"></textarea>
+                <button type="submit" class="w-full bg-navy-800 hover:bg-navy-900 text-white px-6 py-3 rounded-full text-lg transition">
+                    Submit
+                </button>
+            </form>
+        </section>  
+
+        <!-- Testimonial Section -->
+        <section id="reviews" class="text-center bg-gray-800 py-10 px-6 rounded-lg shadow-md">
+            <h2 class="text-3xl sm:text-4xl text-gold-500 font-bold mb-8">What People Are Saying</h2>
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Testimonial 1 -->
+                <div class="p-6 bg-navy-800 rounded shadow-lg">
+                    <p class="text-gray-400">
+                        "Inner Nature helped me unlock my full potential. Truly life-changing!"
+                    </p>
+                    <h3 class="mt-4 text-lg sm:text-xl font-bold text-gold-500">- Alex J.</h3>
+                </div>
+                <!-- Testimonial 2 -->
+                <div class="p-6 bg-navy-800 rounded shadow-lg">
+                    <p class="text-gray-400">
+                        "Their personality assessment gave me clarity on my career direction."
+                    </p>
+                    <h3 class="mt-4 text-lg sm:text-xl font-bold text-gold-500">- Mia K.</h3>
+                </div>
+                <!-- Testimonial 3 -->
+                <div class="p-6 bg-navy-800 rounded shadow-lg">
+                    <p class="text-gray-400">
+                        "Highly recommended! It was insightful and inspiring!"
+                    </p>
+                    <h3 class="mt-4 text-lg sm:text-xl font-bold text-gold-500">- Sam R.</h3>
+                </div>
+            </div>
+        </section>
+
+        <!-- Get Started and Consultation Sections -->
+        <section id="get-started" class="text-center">
+            <h2 class="text-3xl sm:text-4xl text-gold-500 font-bold">Get Started Today</h2>
+            <p class="mt-4 text-base sm:text-lg max-w-2xl mx-auto px-4">
+                Take the first step toward discovering your personality. Start your journey today.
+            </p>
+            <a href="#"
+                class="mt-6 inline-block bg-gold-500 hover:bg-gold-600 text-white px-6 py-3 rounded-full text-lg tracking-wide transition">
+                Take the Test
+            </a>
+        </section>
+    </main>
+
+    <!-- Footer with Contact, Social Media, and Newsletter Sign-up -->
+    <footer class="bg-navy-800 text-center p-8">
+        <div class="max-w-7xl mx-auto">
+            <p class="text-gray-500 mb-4">© 2024 Inner Nature by MetaSolves. All rights reserved.</p>
+            <div class="flex justify-center space-x-6 mb-2">
+                <a href="#" class="text-gold-500 hover:text-gold-600">Facebook</a>
+                <a href="#" class="text-gold-500 hover:text-gold-600">Twitter</a>
+                <a href="#" class="text-gold-500 hover:text-gold-600">Instagram</a>
+            </div>
+            <!-- <form class="flex flex-wrap justify-center mt-4">
+                <input type="email" placeholder="Your Email" class="p-2 rounded-l text-gray-900">
+                <button type="submit" class="bg-gold-500 hover:bg-gold-600 text-white px-4 py-2 rounded-r transition">Sign Up</button>
+            </form> -->
+        </div>
+    </footer>
+
+    <!-- JavaScript for form handling or dynamic content -->
+    <script>
+        // Example for form submission
+        document.querySelector('form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            alert('Form submission is not implemented in this static example. Use a backend for real functionality.');
+        });
+    </script>
+
+    <!-- JavaScript for Mobile Navigation -->
+    <script>
+        const menuToggle = document.getElementById('menu-toggle');
+        const mobileMenu = document.getElementById('mobile-menu');
+        menuToggle.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+
+</html>
